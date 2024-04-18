@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "670132444619",
+    "project_id": "classroomspace-1cbad",
+    "storage_bucket": "classroomspace-1cbad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670132444619:android:fa7fe4c8cf0bffbbb26a4e",
+        "android_client_info": {
+          "package_name": "com.example.classroomspace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "670132444619-9liuccfve6jfu352u91fmdkgpdl1iu9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.classroomspace",
+            "certificate_hash": "7b5d68fda20b5de1e6a0a08cc13f39d6a8bf2fc9"
+          }
+        },
+        {
+          "client_id": "670132444619-dvvkjninguvbppkusep01a81mgtfd79c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ-IsXJDkdMmyooV9qLe4A38Edy5XWm6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "670132444619-dvvkjninguvbppkusep01a81mgtfd79c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

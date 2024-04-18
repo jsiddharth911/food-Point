@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".restroOwner">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Food Menu For Week"
+        android:textColor="#EA0909"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"></TextView>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        android:textColor="#101010"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textStyle="italic"></TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Monday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/mon1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/mon2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/mon3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/mon4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Tuesday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/tues1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/tues2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/tues3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/tues4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Wednesday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/wednes1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/wednes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/wednes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/wednes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Thrusday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/thrus1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/thrus2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/thrus3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/thrus4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Friday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/fri1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/fri2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/fri3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/fri4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Saturday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/satur1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/satur2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/satur3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/satur4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Sunday Menu"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="#090909">
+            </TextView>
+
+            <EditText
+                android:id="@+id/sun1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item1"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/sun2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item2"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/sun3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item3"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/sun4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_edit_text"
+                android:padding="12dp"
+                android:hint="item4"
+                ></EditText>
+
+
+            <Button
+                android:id="@+id/btnsub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/add_item"
+                android:text="Submit"
+                android:textSize="15dp"
+                android:textColor="#ffffff"></Button>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

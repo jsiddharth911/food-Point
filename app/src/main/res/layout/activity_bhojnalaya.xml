@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".Bhojnalaya"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/back"
+        ></ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+        <ImageView
+            android:id="@+id/cartbhoj"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="38dp"
+            android:foregroundGravity="right"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_shopping"></ImageView>
+
+
+        <TextView
+            android:id="@+id/add_item"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="46dp"
+            android:foregroundGravity="right"
+            android:text="1"
+            android:textSize="12dp"
+            android:textColor="#0522F3"
+            android:textStyle="bold"></TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suddh  Sakahari \n     Bhojnalaya"
+            android:textSize="20sp"
+            android:textColor="#0C0C0C"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"></TextView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:foregroundGravity="fill_horizontal"
+                android:background="@drawable/bhojrating">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="4.3"
+                        android:textColor="#ffff"
+                        android:textSize="17sp"></TextView>
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="4dp"
+                        android:src="@drawable/ic_star"></ImageView>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rating"
+                android:weightSum="10"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#ffff"
+                    android:textStyle="italic"
+                    android:text="Book 30 days meal \n  and get 20% off"
+                    android:layout_gravity="center"
+
+                    android:textSize="20sp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="#ffff"
+                    android:textStyle="italic"
+                    android:text="Book 7 days meal \n  and get 10% off"
+                    android:textSize="20sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/pureveg">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/veg"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    ></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15sp"
+                    android:text="Pure veg"
+                    android:textColor="#0C8F13"></TextView>
+
+            </LinearLayout>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentEnd="true"
+                 android:paddingRight="20dp"
+                 android:textSize="15sp"
+                 android:textColor="#101010"
+                 android:text="#Maxsafety"
+                 android:textStyle="bold"
+                 ></TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  weekened have tasty exclusive dishes   "
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#F42F2F"
+                android:background="@drawable/weekened"
+                ></TextView>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday Exclusive"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="#EF0505"
+                        android:textSize="15sp"></TextView>
+
+                    <Button
+                        android:id="@+id/arrow_up"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="2dp"
+                       android:background="@drawable/ic_drop_up"
+                        android:layout_marginRight="30dp"></Button>
+
+                </RelativeLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monday"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Rice  3chapati  salad  curd  "
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#0C0C0C"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="  choose max two  "
+                        android:textSize="15sp"
+                        android:textColor="#737171"
+                        ></TextView>
+
+                        <CheckBox
+                            android:id="@+id/monday1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rajma"></CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/monday2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kadi pakoda"></CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/monday3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Arhar dal"></CheckBox>
+
+                        <CheckBox
+                            android:id="@+id/monday4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mixveg"></CheckBox>
+
+                        <Button
+                            android:id="@+id/addbtn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add"
+                            android:background="@drawable/weekened"
+                            android:layout_marginBottom="3dp">
+                        </Button>
+
+                </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tuesday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tuesday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  3chapati  salad  papad  raita  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/tuesday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bindi tadka"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/tuesday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kadi pakoda"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/tuesday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kali dal"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/tuesday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Simla mirch aaloo"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wednesday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wednesday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  3chapati  salad  Masala dahi  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/wednesday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sev tamatar"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/wednesday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chole"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/wednesday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Arhar dal"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/wednesday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jira aaloo"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thrusday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/thrusday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  3chapati  salad  pickle  papad  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/thrusday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="chana"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/thrusday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Moong dal"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/thrusday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Matar gravi"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/thrusday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="tamatar longee"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Friday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/friday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  3chapati  salad  vegetable raita  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/friday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aachari aaloo"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/friday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dal"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/friday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Seasonal sabji"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/friday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Loki sabji"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Saturday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up6"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/saturday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  2chapati  1laccha parantha  curd  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/saturday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aaloo do pyaja"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/saturday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kadai Paneer"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/saturday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chana Masala"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/saturday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dal Fry"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunday Exclusive"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#EF0505"
+                            android:textSize="15sp"></TextView>
+
+                        <Button
+                            android:id="@+id/arrow_up7"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:padding="2dp"
+                            android:background="@drawable/ic_drop_up"
+                            android:layout_marginRight="30dp"></Button>
+
+                    </RelativeLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sunday"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            tools:ignore="MissingConstraints">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  Rice  1Rumali-Roti  1chapati  1Paneer-Parantha   curd  "
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="#0C0C0C"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="  choose max two  "
+                                android:textSize="15sp"
+                                android:textColor="#737171"
+                                ></TextView>
+
+                            <CheckBox
+                                android:id="@+id/sunday1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sahi Paneer"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/sunday2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dal Tadka"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/sunday3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paneer Butter Masala"></CheckBox>
+
+                            <CheckBox
+                                android:id="@+id/sunday4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Aaloo Gobi"></CheckBox>
+
+                            <Button
+                                android:id="@+id/addbtn7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:background="@drawable/weekened"
+                                android:layout_marginBottom="3dp">
+                            </Button>
+
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:background="#AAA9A9"></View>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

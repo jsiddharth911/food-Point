@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".restroDetails">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Welocome please fill the details"
+        android:textStyle="italic"
+        android:textColor="#E40909"
+        android:textSize="20dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/resname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Restaurant Name"
+            android:layout_marginTop="15dp"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/unique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Restaurant Uniqueness"
+            android:layout_marginTop="15dp"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/mincost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Minimum Cost"
+            android:layout_marginTop="15dp"
+            ></EditText>
+
+        <ImageView
+            android:id="@+id/imageupload"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+             android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_image_24"
+            ></ImageView>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"></ProgressBar>
+
+        <Button
+            android:id="@+id/subdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_customization"
+            android:text="Submit"
+            android:textSize="15dp"></Button>
+
+    </LinearLayout>
+
+</LinearLayout>
